@@ -1,0 +1,48 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Tables {% endblock title %}
+
+{% block content %}
+
+<!-- <div class="header bg-primary pb-6"> -->
+
+<div class="border border-primary d-flex flex-wrap" id="main_div" id="main_div" >
+    <div class="border border-danger col-md-12">
+        <form name="form_formcsrf" >
+            <input type="hidden" name="cstf_token_name" id="cstf_token_id" value="{{csrf_token}}">
+        </form>
+
+        <button id="btn" class="btn-nature">btn</button>
+    </div>
+    
+
+
+</div>
+
+
+<!-- </div> -->
+{% include "includes/footer.html" %}
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE -->
+{% block javascripts %}
+
+
+
+<script src="../../static/assets/js/components/custom/images.js"></script>
+
+<script>
+    
+
+    window.addEventListener("load", function () {
+       
+        onload_fun()
+
+        
+    });
+
+    
+</script>
+
+{% endblock javascripts %}
